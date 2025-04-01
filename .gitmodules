@@ -1,0 +1,6 @@
+[submodule "src/CApy"]
+	path = src/CApy
+	url = git@github.com:getzlab/CApy.git
+[submodule "src/AsymTools2"]
+	path = src/AsymTools2
+	url = git@github.com:getzlab/AsymTools2.git
