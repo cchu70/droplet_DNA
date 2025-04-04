@@ -68,7 +68,7 @@ def main(
     
     all_bed_dfs.to_csv(all_beds_fn, sep='\t')
     
-    cb_coverage = parallel_count_region(all_bed_dfs.head(20), bam_fn, num_workers=num_workers)
+    cb_coverage = parallel_count_region(all_bed_dfs, bam_fn, num_workers=num_workers)
 
     cb_coverage_s = pd.Series(cb_coverage)
     cb_coverage_s.to_csv(output_fn, sep='\t')
